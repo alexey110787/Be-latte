@@ -1,0 +1,378 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url('fonts/PlayfairDisplay-Regular.otf');
+}
+
+@font-face {
+    font-family: "Playfair Display Bold";
+    src: url('fonts/PlayfairDisplay-Bold.otf');
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato-Regular.ttf");
+}
+
+header {
+    background-image: url('images/Be-Latte.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    margin: 15px 15px 0px;
+}
+
+header .welcome {
+    max-width: 444px;
+    margin: 200px 166px;
+}
+
+header .welcome h1 {
+    font-size: 3rem;
+    color: #f5d76e;
+    font-family: "Playfair Display";
+}
+
+header .welcome p {
+    font-family: "Lato";
+    color: white;
+    padding: 20px 0px 40px;
+}
+
+.glass {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+}
+
+.button {
+    border: solid white 2px;
+    color: white;
+    padding: 20px 58px;
+    font-family: "Lato";
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+nav {
+    font-family: "Playfair Display", "Times New Roman", serif;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 43px 6px 45px;
+}
+
+nav li a {
+    color: white;
+}
+
+nav li a:hover {
+    color: #f5d76e;
+}
+
+nav .logo {
+    padding: 0px 40px;
+    height: 0px;
+}
+
+nav .logo img {
+    vertical-align: -75px;
+}
+
+main {
+    margin: 0px 15px 15px;
+}
+
+.about {
+    max-width: 746px;
+    text-align: center;
+    margin: auto;
+}
+
+.about h1 {
+    font-family: "Playfair Display";
+    font-size: 1.6rem;
+    padding: 98px 20px 35px;
+}
+
+.about h1 .text-decorate {
+    text-decoration: underline;
+    font-family: "Playfair Display Bold";
+}
+
+.about p {
+    font-family: "Lato";
+}
+
+img[src="images/Coffee-icon.png"] {
+    padding: 80px;
+}
+
+.menu,
+.testimonials,
+.location {
+    font-family: "Playfair Display";
+    text-align: center;
+}
+
+.menu h1,
+.testimonials h1,
+.location h1 {
+    text-transform: uppercase;
+    margin-bottom: 59px;
+}
+
+.menu figure {
+    max-width: 396px;
+    margin: 0px 15px 59px;
+    display: inline-block;
+}
+
+.menu figure .block {
+    position: relative;
+    color: black;
+    display: block;
+    /* &::before {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.7);
+                content: '';
+                display: block;
+            } */
+}
+
+.menu figure .block div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(236, 236, 236, 0.8);
+}
+
+.menu figure .block div:hover {
+    background-color: rgba(244, 218, 129, 0.8);
+}
+
+.menu figure .block div span {
+    position: relative;
+    top: calc(50% - 0.9rem);
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.menu figure img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.menu figure .product {
+    float: left;
+    margin: 44px 0px 0px 78px;
+    text-align: left;
+    font-family: "Lato";
+    font-weight: bold;
+}
+
+.menu figure .price {
+    float: right;
+    margin: 44px 78px 0px 0px;
+    text-align: right;
+    font-family: "Lato";
+    font-weight: bold;
+}
+
+.menu .btn-black {
+    color: black;
+    border-color: black;
+}
+
+.review {
+    /* background-color: @colorBrown;
+    background-image: url("images/Testimonials.jpg");
+    background-repeat: no-repeat; */
+    height: 425px;
+}
+
+.review .slider {
+    position: relative;
+    background-color: #39312f;
+    float: right;
+    width: 458px;
+    text-align: center;
+}
+
+.review .slider::before {
+    display: block;
+    position: absolute;
+    content: url(images/01.png);
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    padding: 32px 35px;
+    /* display: block;
+            position: absolute;
+            content: '.01';
+            font-size: 5.5rem;
+            font-weight: bold;
+            color: #3f3736;
+            width: 100px;
+            height: 100px;
+            padding: 0px 35px; */
+}
+
+.review .slider .slider-content {
+    font-family: "Lato";
+    color: white;
+    line-height: 1.3rem;
+    background-color: #39312f;
+    max-width: 259px;
+    padding: 98px 100px 0px;
+}
+
+.review .slider .slider-content::after {
+    display: block;
+    position: absolute;
+    content: url(images/quote.png);
+    background-color: transparent;
+    right: 35px;
+    bottom: 24px;
+}
+
+.review .slider .slider-content img {
+    border-radius: 50%;
+}
+
+.review .slider .slider-content figcaption {
+    font-family: "Playfair Display";
+    color: #f5d76e;
+    padding: 15px 0px 20px;
+}
+
+.review .slider ul {
+    padding: 40px 0px 43px;
+}
+
+.bg-coffee {
+    background-color: #39312f;
+    background-image: url("images/Testimonials.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    margin-right: 458px;
+}
+
+.slider-btn {
+    width: 10px;
+    height: 10px;
+    margin: 0px 5px;
+    border-radius: 50px;
+    display: inline-block;
+    background-color: white;
+    list-style-type: disc;
+    cursor: pointer;
+    user-select: none;
+}
+
+.selected {
+    background-color: #39312f;
+    border: solid white 1px;
+    box-sizing: border-box;
+}
+
+.map {
+    height: 461px;
+    /* background-image: url('images/map.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.location-info {
+    background-color: #f5d76e;
+    float: left;
+    text-align: left;
+    padding: 59px 52px;
+    max-width: 458px;
+}
+
+.location-info h2 {
+    text-transform: uppercase;
+    padding-bottom: 23px;
+    font-family: "Playfair Display";
+}
+
+.location-info p {
+    font-family: "Lato";
+    padding-bottom: 40px;
+}
+
+.location-info p:last-of-type {
+    padding-bottom: 0px;
+}
+
+.location-info p .days {
+    display: inline-block;
+    font-weight: bold;
+    min-width: 97px;
+}
+
+.bg-map {
+    background-color: #f5d76e;
+    background-image: url(images/map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    margin-left: 562px;
+}
+
+footer {
+    background-color: #39312f;
+    text-align: center;
+    color: white;
+    font-family: "Lato";
+}
+
+footer ul {
+    padding: 93px 0px 42px;
+}
+
+footer li {
+    display: inline;
+    margin: 0px 14px;
+}
+
+footer li a {
+    color: white;
+    font-size: 1.6rem;
+}
+
+footer li a:hover {
+    color: #f5d76e;
+}
+
+footer p {
+    padding-bottom: 148px;
+}

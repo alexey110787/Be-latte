@@ -1,0 +1,346 @@
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+a {
+    text-decoration: none
+}
+
+li {
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url('fonts/PlayfairDisplay-Regular.otf');
+}
+
+@font-face {
+    font-family: "Playfair Display Bold";
+    src: url('fonts/PlayfairDisplay-Bold.otf');
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato-Regular.ttf");
+}
+
+@colorYellow: #f5d76e;
+@colorBrown: #39312f;
+@fontPlayfairDisplay: "Playfair Display";
+@fontLato: "Lato";
+header {
+    background-image: url('images/Be-Latte.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    margin: 15px 15px 0px;
+    .welcome {
+        max-width: 444px;
+        margin: 200px 166px;
+        h1 {
+            font-size: 3rem;
+            color: @colorYellow;
+            font-family: @fontPlayfairDisplay;
+        }
+        p {
+            font-family: @fontLato;
+            color: white;
+            padding: 20px 0px 40px;
+        }
+    }
+}
+
+.glass {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+}
+
+.button {
+    border: solid white 2px;
+    color: white;
+    padding: 20px 58px;
+    font-family: @fontLato;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+nav {
+    font-family: @fontPlayfairDisplay, "Times New Roman", serif;
+    background-color: rgba(0, 0, 0, 0.3);
+    ul {
+        text-align: center;
+    }
+    li {
+        display: inline-block;
+        padding: 43px 6px 45px;
+        a {
+            color: white;
+            &:hover {
+                color: @colorYellow;
+            }
+        }
+    }
+    .logo {
+        padding: 0px 40px;
+        height: 0px;
+        img {
+            vertical-align: -75px;
+        }
+    }
+}
+
+main {
+    margin: 0px 15px 15px;
+}
+
+.about {
+    max-width: 746px;
+    text-align: center;
+    margin: auto;
+    h1 {
+        font-family: @fontPlayfairDisplay;
+        font-size: 1.6rem;
+        padding: 98px 20px 35px;
+        .text-decorate {
+            text-decoration: underline;
+            font-family: "Playfair Display Bold";
+        }
+    }
+    p {
+        font-family: @fontLato;
+    }
+}
+
+img[src="images/Coffee-icon.png"] {
+    padding: 80px;
+}
+
+.menu,
+.testimonials,
+.location {
+    font-family: @fontPlayfairDisplay;
+    text-align: center;
+    h1 {
+        text-transform: uppercase;
+        margin-bottom: 59px;
+    }
+}
+
+.menu {
+    figure {
+        max-width: 396px;
+        margin: 0px 15px 59px;
+        display: inline-block;
+        .block {
+            position: relative;
+            color: black;
+            display: block;
+            div {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(236, 236, 236, 0.8);
+                &:hover {
+                    background-color: rgba(244, 218, 129, 0.8);
+                }
+                span {
+                    position: relative;
+                    top: calc(50% - 0.9rem);
+                    text-transform: uppercase;
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                }
+            }
+            /* &::before {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.7);
+                content: '';
+                display: block;
+            } */
+        }
+        img {
+            width: 100%;
+            vertical-align: bottom;
+        }
+        .product {
+            float: left;
+            margin: 44px 0px 0px 78px;
+            text-align: left;
+            font-family: @fontLato;
+            font-weight: bold;
+        }
+        .price {
+            float: right;
+            margin: 44px 78px 0px 0px;
+            text-align: right;
+            font-family: @fontLato;
+            font-weight: bold;
+        }
+    }
+    .btn-black {
+        color: black;
+        border-color: black;
+    }
+}
+
+.review {
+    /* background-color: @colorBrown;
+    background-image: url("images/Testimonials.jpg");
+    background-repeat: no-repeat; */
+    height: 425px; // высота указана явно для отображения фона
+    .slider {
+        position: relative;
+        background-color: @colorBrown;
+        float: right;
+        width: 458px;
+        text-align: center;
+        &::before {
+            display: block;
+            position: absolute;
+            content: url(images/01.png);
+            background-color: transparent;
+            width: 100px;
+            height: 100px;
+            padding: 32px 35px;
+            /* display: block;
+            position: absolute;
+            content: '.01';
+            font-size: 5.5rem;
+            font-weight: bold;
+            color: #3f3736;
+            width: 100px;
+            height: 100px;
+            padding: 0px 35px; */
+        }
+        .slider-content {
+            &::after {
+                display: block;
+                position: absolute;
+                content: url(images/quote.png);
+                background-color: transparent;
+                right: 35px;
+                bottom: 24px;
+            }
+            img {
+                border-radius: 50%;
+            }
+            figcaption {
+                font-family: @fontPlayfairDisplay;
+                color: @colorYellow;
+                padding: 15px 0px 20px;
+            }
+            font-family: @fontLato;
+            color: white;
+            line-height: 1.3rem;
+            background-color: @colorBrown;
+            max-width: 259px;
+            padding: 98px 100px 0px;
+        }
+        ul {
+            padding: 40px 0px 43px;
+        }
+    }
+}
+
+
+.bg-coffee {
+    background-color: @colorBrown;
+    background-image: url("images/Testimonials.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    margin-right: 458px;
+}
+
+.slider-btn {
+    width: 10px;
+    height: 10px;
+    margin: 0px 5px;
+    border-radius: 50px;
+    display: inline-block;
+    background-color: white;
+    list-style-type: disc;
+    cursor: pointer;
+    user-select: none;
+}
+
+.selected {
+    background-color: @colorBrown;
+    border: solid white 1px;
+    box-sizing: border-box;
+}
+
+.map {
+    height: 461px;  // высота указана явно для отображения фона
+    /* background-image: url('images/map.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.location-info {
+    background-color: @colorYellow;
+    float: left;
+    text-align: left;
+    padding: 59px 52px;
+    max-width: 458px;
+    h2 {
+        text-transform: uppercase;
+        padding-bottom: 23px;
+        font-family: @fontPlayfairDisplay;
+    }
+    p {
+        font-family: @fontLato;
+        padding-bottom: 40px;
+        &:last-of-type {
+            padding-bottom: 0px;
+        }
+        .days {
+            display: inline-block;
+            font-weight: bold;
+            min-width: 97px;
+        }
+    }
+}
+
+.bg-map {
+    background-color: @colorYellow;
+    background-image: url(images/map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    margin-left: 562px;
+}
+
+footer {
+    background-color: @colorBrown;
+    text-align: center;
+    color: white;
+    font-family: @fontLato;
+    ul {
+        padding: 93px 0px 42px;
+    }
+    li {
+        display: inline;
+        margin: 0px 14px;
+        a {
+            color: white;
+            font-size: 1.6rem;
+            &:hover {
+                color: @colorYellow;
+            }
+        }
+    }
+    p {
+        padding-bottom: 148px;
+    }
+}
